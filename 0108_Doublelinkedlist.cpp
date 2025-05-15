@@ -103,4 +103,8 @@ class DoubleLinkedList{
         //STEP 3 : LINK PREVIOUS NODE TO NEXT OF CURRENT
         current->prev->next = current->next;
 
+        //STEP 4 : if current is not the last node
+        if(current->next != NULL)
+        current->next->prev = current->prev;
+    }
 
