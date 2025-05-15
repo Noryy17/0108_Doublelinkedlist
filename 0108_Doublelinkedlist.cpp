@@ -114,5 +114,10 @@ class DoubleLinkedList{
 
     }
 
-};
+    void traverse(){
+        if (START == NULL){
+            cout << "\nList is Empty" << endl;
+            return;
+        }
+
 
