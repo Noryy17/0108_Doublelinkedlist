@@ -119,5 +119,20 @@ class DoubleLinkedList{
             cout << "\nList is Empty" << endl;
             return;
         }
+        //Step 1 : MARK FIRST NODE AS CURRENTNODE
+        Node *CurrentNode = START;
 
+        //STEP 2 : REPEAT UNTIL CURRENTNODE == NULL
+        cout << "/nRecord in ASCENDING ORDER OF ROLL NUMBER ARE:\n";
+        int i = 0;
+        while (CurrentNode != NULL){
+            cout << i + 1 << ". " << CurrentNode->noMhs << " " << endl;
+
+            //STEP 3 : MOVE TO NEXT NODE
+            CurrentNode = CurrentNode->next;
+            i++;
+        }
+    }
+
+    
 
