@@ -157,5 +157,32 @@ class DoubleLinkedList{
         }
     }
 
-   
+    void searchData(){
+        if (START == NULL){
+            cout << "\nList is Empty" <<endl;
+            return;
+        }
+
+        int rollNo;
+        cout << "\nEnter The Roll number to search :";
+        cin >> rollNo;
+
+        Node *current = START;
+
+        //STEP 1 : TRAVERSE TO FIND MATCHING ROLL NUMBER
+        while (current != NULL && current->noMhs != rollNo)
+        current= current->next;
+
+        //Step 2 : Output Result 
+        if (current == NULL){
+            cout << "RECORD NOT FOUND\n";
+        }
+        else{
+            cout << "Record Found\n";
+            cout << "Roll Number : " << current->noMhs<<endl;
+        }
+    }
+
+
+};
 
