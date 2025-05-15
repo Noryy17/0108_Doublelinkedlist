@@ -27,3 +27,8 @@ class DoubleLinkedList{
         //Step 1 : Allow Cote Memory for new Code
         Node *newNode = new Node();
 
+        //Step 2 : ASSIGN vallue to the data fields
+        newNode->noMhs = nim;
+
+       
+
