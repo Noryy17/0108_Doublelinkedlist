@@ -23,8 +23,7 @@ class DoubleLinkedList{
         int nim;
         cout << "\nEnter the roll number of the student : ";
         cin >> nim; 
-    }
 
+        //Step 1 : Allow Cote Memory for new Code
+        Node *newNode = new Node();
 
-
-}
