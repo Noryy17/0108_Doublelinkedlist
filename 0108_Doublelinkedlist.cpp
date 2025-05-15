@@ -92,5 +92,12 @@ class DoubleLinkedList{
         return;
     }
 
+    //STEP 2 : IF NODE IS AT THE BEGINNING
+    if (current == START){
+        START = current->next; // STEP 2a : START = START.next
+        if (START != NULL){
+           START->prev = NULL; // STEP 2b : START.prev = NULL
+        }
+    }
 
 
