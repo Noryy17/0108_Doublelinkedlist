@@ -134,5 +134,28 @@ class DoubleLinkedList{
         }
     }
 
-    
+    void revtraverse(){
+        if (START == NULL){
+            cout << "\nList is Empty" << endl;
+            return;
+        }
+        //Step 1 : Move to Last Node
+        Node *currentNode  = START;
+        int i=0;
+        while (currentNode->next != NULL){
+            currentNode = currentNode->next;
+            i++;
+        } 
+        //STEP 2 : TRAVERSE BACKWARD
+        cout << "\nRecord In  Descending order of roll number are : \n";
+        while (currentNode != NULL){
+            cout << i + 1 << ". "<< currentNode->noMhs <<" "<< endl;
+
+            //Step 3 : Move To Provesious node
+            currentNode = currentNode->prev;
+            i--;
+        }
+    }
+
+   
 
