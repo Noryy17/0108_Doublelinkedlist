@@ -65,5 +65,11 @@ class DoubleLinkedList{
         newNode->next = current->next; //Step 9a : newNode.next = Current.next
         newNode->prev = current;       //Step 9b : newNode.prev = current
 
+        // Inssert last mode
+        if(current->next != NULL)
+        current->next->prev = newNode; //STEP 9c : current.next
+        current->next = newNode; //STEP 9d : current.next = newNode
+    }
+
 
 
