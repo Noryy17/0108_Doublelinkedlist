@@ -56,4 +56,14 @@ class DoubleLinkedList{
           current = current->next;
         }
 
+        if(current -> next != NULL && nim == current->next->noMhs){
+           cout << "\nDuplicate roll numbers not allowed" << endl;
+           return;
+        }
+
+        //STEP 9 : Insert between current  and current->next
+        newNode->next = current->next; //Step 9a : newNode.next = Current.next
+        newNode->prev = current;       //Step 9b : newNode.prev = current
+
+
 
